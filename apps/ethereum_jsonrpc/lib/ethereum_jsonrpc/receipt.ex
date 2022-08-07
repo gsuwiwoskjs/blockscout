@@ -310,6 +310,6 @@ defmodule EthereumJSONRPC.Receipt do
   end
 
   defp entry_to_elixir({key, value}) do
-    {:error, {:unknown_key, %{key: key, value: value}}}
+    {:ok, {:unknown_key, %{key: key, value: value}}}
   end
 end
